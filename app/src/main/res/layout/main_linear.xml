@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".MainActivity">
+
+
+
+        <TextView
+            android:id="@+id/titleTXT"
+            style = "@style/title_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMC"
+            android:layout_margin="40dp"
+            tools:layout_editor_absoluteX="174dp"
+            tools:layout_editor_absoluteY="316dp" />
+
+
+        <EditText
+            android:id="@+id/pesoEDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Peso (ex 65.8 kg)"
+            style="@style/inputStyle" />
+
+        <EditText
+            android:id="@+id/alturaEDT"
+            style="@style/inputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Altura (ex: 1.78m)"
+            android:layout_margin="40dp"
+            android:textAlignment="center"
+            />
+
+
+        <Button
+            android:id="@+id/calcularBTN"
+            android:backgroundTint="@color/green"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="Calcular" />
+
+
+</LinearLayout>
